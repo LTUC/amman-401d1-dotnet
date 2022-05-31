@@ -1,0 +1,13 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Class26Demo.Models.Person
+<h3>Add a new person</h3>
+
+<form asp-controller="Home" asp-action="Add" method="post">
+    <partial name="_PersonFields"></partial>
+
+        <button type="submit">
+            add person
+        </button>
+</form>
+
+<div asp-validation-summary="All"></div>
