@@ -1,0 +1,12 @@
+﻿@using Class26Demo.Models
+@model List<Person>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+    <ul>
+        @foreach(var item in Model)
+    {
+        <li>
+            <a asp-controller="Home" asp-action="Index" asp-route-name=@item.Name asp-route-job=@item.Job>@item.Name</a>
+        </li>
+    }
+</ul>
