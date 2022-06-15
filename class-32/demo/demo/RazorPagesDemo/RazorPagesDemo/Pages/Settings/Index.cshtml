@@ -1,0 +1,13 @@
+﻿@page
+@model RazorPagesDemo.Pages.Settings.IndexModel
+@{
+}
+
+<h1>Welcome, @Model.Name</h1>
+<form method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name"/> <!--for the name-->
+    <label asp-for="Mode"></label>
+    <input asp-for="Mode"/> <!-- for the mode-->
+    <button type="submit">submit</button>
+</form>
